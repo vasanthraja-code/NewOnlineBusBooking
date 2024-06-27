@@ -30,7 +30,7 @@ public class LoginServlet extends HttpServlet {
 		if(phone.equals("9999999999") && password.equals("admin@123")) {
 			type=1;
 			
-		}
+		}		
 		
 		try {
 			Connection con = DBConnectionUtility.getInstance().getConnection();
