@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="style.css" rel="stylesheet">
+</head>
+<body>	
+		<div class="adminLogin">
+			<div class="form-container adminpageclass">
+			<h1 id="title" class="opc"> ADMIN LOGIN</h1>
+				<form name="form">
+					<div class="allInput">
+						
+						<div class="input-field" id="emailField">
+							<i class="fa-solid fa-envelope"></i>
+							<input type="email" id="adminemail" name="adminemail" class="emailclass" placeholder="E-mail" required>
+						</div>
+						<div class="input-field" id="passwordField">
+							<i class="fa-solid fa-lock"></i>
+							<input type="password" id="adminpassword" name="adminpwd" class="passwordclass" placeholder="Password" required>
+						</div>
+					</div>
+					<div class="admin-btn-field">
+							<button type=button id="AdminLoginBtn" class="opc" onclick="adminLoginBtnfn()">Sign In</button>
+					</div>
+				</form>	
+		  </div>
+		  <div class="adminhomepage">
+		  			<div class="imagediv">
+		  				<img class="image" src="https://t3.ftcdn.net/jpg/03/48/55/20/360_F_348552050_uSbrANL65DNj21FbaCeswpM33mat1Wll.jpg">			
+		  			</div>
+		  			<div class="imagediv">
+		  				<img class="image" src="https://w0.peakpx.com/wallpaper/417/897/HD-wallpaper-volvo-9800-15m-buses-busplusmex-mexico-movilbus.jpg">
+		  			</div>			
+		  </div>
+		</div>
+		<div id="roles" style="display:none">
+			<label><b>FEATURES</b></label>
+			<label>Add Bus</label><br>
+			<button type="button" onclick="showOptions()">Add Bus</button>
+		</div>
+	<script src="script.js"> </script>
+	<script src="Admin.js"></script>
+</body>
+</html>

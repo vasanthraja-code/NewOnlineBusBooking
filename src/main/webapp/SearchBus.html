@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Date</title>
+</head>
+<body>
+<div id="page1">
+	<div>
+		<label for="date">Date:</label>
+		<input type="date" id="date" name="date"> </br>
+	</div>
+	
+	<div>
+	<p id="datechoosen"></p>
+	<label>From:</label>
+  <select id="from">
+  		<option value="Chennai">Chennai</option>
+  		<option value="Coimbatore">Coimbatore</option>
+  		<option value="Chidambaram">Chidambaram</option>
+  		<option value="Cuddalore">Cuddalore</option>
+  		<option value="Dharmapuri">Dharmapuri</option>
+  		<option value="Erode">Erode</option>
+  		<option value="Kallakurichi">Kallakurichi</option>
+  		<option value="Karaikudi">Karaikudi</option>
+  		<option value="Krishnagiri">Krishnagiri</option>
+  		<option value="Madurai">Madurai</option>
+  		<option value="Ooty"> Ooty</option>
+  		<option value="Puducherry">Puducherry</option>
+  		<option value="Pudukottai">Pudukottai</option>
+  		<option value="Rameshwaram">Rameshwaram</option>
+  		<option value="Salem">Salem</option>
+  		<option value="Tanjavur">Tanjavur</option>
+  		<option value="Tenkasi">Tenkasi</option>
+  		<option value="Tindivanam">Tindivanam</option>
+  		<option value="Tiruvannamalai">Tiruvannamalai</option>
+  		<option value="Tirunelveli">Tirunelveli</option>
+  		<option value="Trichy">Trichy</option>
+  </select>
+	
+	</div>
+
+	<div>
+	<label>To:</label>
+  		<select id="to">
+  			<option value="Chennai">Chennai</option>
+  		<option value="Coimbatore">Coimbatore</option>
+  		<option value="Chidambaram">Chidambaram</option>
+  		<option value="Cuddalore">Cuddalore</option>
+  		<option value="Dharmapuri">Dharmapuri</option>
+  		<option value="Erode">Erode</option>
+  		<option value="Kallakurichi">Kallakurichi</option>
+  		<option value="Karaikudi">Karaikudi</option>
+  		<option value="Krishnagiri">Krishnagiri</option>
+  		<option value="Madurai">Madurai</option>
+  		<option value="Ooty"> Ooty</option>
+  		<option value="Puducherry">Puducherry</option>
+  		<option value="Pudukottai">Pudukottai</option>
+  		<option value="Rameshwaram">Rameshwaram</option>
+  		<option value="Salem">Salem</option>
+  		<option value="Tanjavur">Tanjavur</option>
+  		<option value="Tenkasi">Tenkasi</option>
+  		<option value="Tindivanam">Tindivanam</option>
+  		<option value="Tiruvannamalai">Tiruvannamalai</option>
+  		<option value="Tirunelveli">Tirunelveli</option>
+  		<option value="Trichy">Trichy</option>
+  		</select>
+	
+	</div>
+	<button type="button" onclick="showAllBuses()">Search</button>
+</div>
+<div id="page" style="display:none">
+	<table>
+		<thead>
+			<tr>
+				<th>Bus_Id</th>
+				<th>Bus_Name</th>
+				<th>Route_From</th>
+				<th>Route_To</th>
+				<th>Departure_Time</th>
+				<th>Arrival_Time</th>
+				<th>Total_Seats</th>
+				<th>Available_Seats</th>
+				<th>Journey Date</th>
+			</tr>
+		</thead>
+		
+		<tbody id="dataBusBody"></tbody>
+	</table>
+		
+</div>
+	<script src="script.js"> </script>
+</body>
+</html>
